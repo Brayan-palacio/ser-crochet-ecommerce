@@ -1,0 +1,199 @@
+:root {
+      --primary-color: #f8e1e7;
+      --accent-color: #9e6a7a;
+      --dark-color: #3a2e32;
+      --light-color: #fff9fa;
+      --error-color: #e74c3c;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: var(--primary-color);
+      background-image: url('/public/img/background.webp');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      padding: 20px;
+    }
+    
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 450px;
+      transform: translateY(-20px);
+      opacity: 0;
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
+    
+    @keyframes fadeInUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .logo h1 {
+      color: var(--accent-color);
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    
+    .logo p {
+      color: var(--dark-color);
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+    
+    .form-group {
+      margin-bottom: 25px;
+      position: relative;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--dark-color);
+    }
+    
+    .input-wrapper {
+      position: relative;
+    }
+    
+    .input-wrapper i {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--accent-color);
+    }
+    
+    input {
+      width: 100%;
+      padding: 12px 15px 12px 45px;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+    
+    input:focus {
+      border-color: var(--accent-color);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(158, 106, 122, 0.2);
+    }
+    
+    button {
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 14px;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      background-color: var(--dark-color);
+      transform: translateY(-2px);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    .loading {
+      position: relative;
+      pointer-events: none;
+    }
+    
+    .loading::after {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: translateY(-50%) rotate(360deg); }
+    }
+    
+    .error-message {
+      color: var(--error-color);
+      font-size: 0.85rem;
+      margin-top: 5px;
+      display: none;
+    }
+    
+    .forgot-password {
+      text-align: right;
+      margin-top: -15px;
+      margin-bottom: 20px;
+    }
+    
+    .forgot-password a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s;
+    }
+    
+    .forgot-password a:hover {
+      color: var(--dark-color);
+      text-decoration: underline;
+    }
+    
+    .alert {
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-weight: 500;
+      display: none;
+    }
+    
+    .alert-error {
+      background-color: #ffebee;
+      color: var(--error-color);
+      border-left: 4px solid var(--error-color);
+    }
+    
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 30px 20px;
+      }
+      
+      .logo h1 {
+        font-size: 1.5rem;
+      }
+    }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración - SER CROCHET</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/public/img/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="../css/admin.css">
+  
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="admin-logo">
+        <h2>SER CROCHET</h2>
+        <p>Panel de Administración</p>
+      </div>
+      
+      <nav class="admin-nav">
+        <ul>
+          <li><a href="#productos" class="active"><i class="fas fa-box-open"></i> Productos</a></li>
+          <li><a href="#pedidos"><i class="fas fa-clipboard-list"></i> Pedidos</a></li>
+          <li><a href="#configuracion"><i class="fas fa-cog"></i> Configuración</a></li>
+          <li><a href="/public/index.html"><i class="fas fa-store"></i> Ver Tienda</a></li>
+          <li><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+      <header class="admin-header">
+        <h1 class="admin-title"><i class="fas fa-box-open"></i> Gestión de Productos</h1>
+        <button class="btn btn-primary" id="addProductBtn">
+          <i class="fas fa-plus"></i> Nuevo Producto
+        </button>
+      </header>
+      
+      <!-- Lista de Productos -->
+      <div class="admin-card">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Categoría</th>
+              <th>Precio</th>
+              <th>Etiquetas</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="productsTable">
+            <!-- Los productos se cargarán aquí dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Formulario de Producto (oculto inicialmente) -->
+      <div class="admin-card" id="productFormContainer" style="display: none;">
+        <h2 style="margin-bottom: 20px;"><span id="formTitle">Agregar</span> Producto</h2>
+        
+        <form id="productForm">
+          <input type="hidden" id="productId">
+          
+          <div class="form-group">
+            <label for="productName">Nombre del Producto</label>
+            <input type="text" id="productName" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="productCategory">Categoría</label>
+            <select id="productCategory" class="form-control" required>
+              <option value="bolsos">Bolsos</option>
+              <option value="accesorios">Accesorios y Prendas</option>
+              <option value="decoracion">Decoración</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="productPrice">Precio (COP)</label>
+            <input type="number" id="productPrice" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="productDescription">Descripción</label>
+            <textarea id="productDescription" class="form-control" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="productImageUrl">URL de la Imagen</label>
+            <div class="image-url-input">
+              <input type="url" id="productImageUrl" class="form-control" placeholder="https://ejemplo.com/imagen.jpg">
+              <button type="button" class="btn btn-primary" id="previewImageBtn"><i class="fas fa-eye"></i> Vista Previa</button>
+            </div>
+            <div class="image-preview-container">
+              <img id="imagePreview" class="image-preview" alt="Vista previa de la imagen">
+            </div>
+            <small class="text-muted">Pega la URL de una imagen (ej. desde Netlify)</small>
+          </div>
+          
+          <div class="form-group">
+            <label>Etiquetas del producto</label>
+            <div class="checkbox-group">
+              <label class="checkbox-container featured">
+                <input type="checkbox" id="productFeatured">
+                <span class="checkmark"></span>
+                Destacado
+              </label>
+              
+              <label class="checkbox-container bestseller">
+                <input type="checkbox" id="productBestseller">
+                <span class="checkmark"></span>
+                Más Vendido
+              </label>
+              
+              <label class="checkbox-container new">
+                <input type="checkbox" id="productNew">
+                <span class="checkmark"></span>
+                Nuevo
+              </label>
+              
+              <label class="checkbox-container offer">
+                <input type="checkbox" id="productOffer">
+                <span class="checkmark"></span>
+                Oferta
+              </label>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" id="saveProductBtn">
+            <span id="saveButtonText">Guardar Producto</span>
+            <i class="fas fa-spinner loading-spinner" id="loadingSpinner" style="display: none;"></i>
+          </button>
+          <button type="button" class="btn btn-cancel" id="cancelFormBtn" style="margin-left: 10px;">Cancelar</button>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js"></script>
+  <script src="/public/js/firebase-config.js"></script>
+  <script src="/public/js/admin.js"></script>
+
+</body>
+</html>

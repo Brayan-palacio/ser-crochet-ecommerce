@@ -1,0 +1,29 @@
+{
+  "name": "SER CROCHET",
+  "short_name": "SerCrochet",
+  "description": "Tienda de productos tejidos a mano con amor. Compra en línea y recibe en casa.",
+  "lang": "es-CO",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#d68fb0",
+  "icons": [
+    {
+      "src": "/img/logo_ser_crochet.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/img/logo_ser_crochet.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    },
+    {
+      "src": "/img/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
