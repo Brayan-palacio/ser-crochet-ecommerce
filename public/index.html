@@ -1,429 +1,664 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
-  <meta name="author" content="SER CROCHET">
-  <meta name="robots" content="index, follow">
-  <title>SER CROCHET | Artesanías en Crochet Hechas a Mano en Colombia</title>
-  <meta name="description" content="Productos artesanales en crochet 100% hechos a mano con materiales ecológicos. Envíos a toda Colombia. Bolsos, accesorios y decoración con diseños únicos.">
-  <meta name="keywords" content="crochet colombia, bolsos tejidos a mano, artesanías en trapillo, regalos ecológicos, mochilas crochet, decoración handmade, moda sostenible bogotá">
-  
-  <!-- DNS Prefetch -->
-  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  
-  <!-- Preload -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" as="style">
-  <link rel="preload" href="img/hero-image-optimized.webp" as="image" media="(min-width: 768px)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"
+    />
+    <meta name="author" content="SER CROCHET" />
+    <meta name="robots" content="index, follow" />
+    <title>SER CROCHET | Artesanías en Crochet Hechas a Mano en Colombia</title>
+    <meta
+      name="description"
+      content="Productos artesanales en crochet 100% hechos a mano con materiales ecológicos. Envíos a toda Colombia. Bolsos, accesorios y decoración con diseños únicos."
+    />
+    <meta
+      name="keywords"
+      content="crochet colombia, bolsos tejidos a mano, artesanías en trapillo, regalos ecológicos, mochilas crochet, decoración handmade, moda sostenible bogotá"
+    />
 
-  <!-- Favicon Moderno -->
-  <link rel="icon" href="/img/favicon.ico" sizes="any">
-  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="manifest" href="manifest.webmanifest" crossorigin="use-credentials">
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
-  <!-- PWA iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Preload -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="img/hero-image-optimized.webp"
+      as="image"
+      media="(min-width: 768px)"
+    />
 
-  <!-- CSS Externos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
+    <!-- Favicon Moderno -->
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link
+      rel="manifest"
+      href="manifest.webmanifest"
+      crossorigin="use-credentials"
+    />
 
-  <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="SER CROCHET | Artesanías en Crochet Hechas a Mano">
-  <meta property="og:description" content="Descubre nuestra colección de productos artesanales en crochet, elaborados con técnicas tradicionales y materiales sostenibles.">
-  <meta property="og:image" content="https://sercrochet.netlify.app/img/social-share.webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Productos artesanales SER CROCHET">
-  <meta property="og:url" content="https://sercrochet.netlify.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SER CROCHET">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SER CROCHET | Artesanías en Crochet Hechas a Mano">
-  <meta name="twitter:description" content="Productos artesanales en crochet 100% hechos a mano con materiales ecológicos.">
-  <meta name="twitter:image" content="https://sercrochet.netlify.app/img/social-share.webp">
-  <meta name="twitter:site" content="@sercrochet">
-  <meta name="twitter:creator" content="@sercrochet">
+    <!-- PWA iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-</head>
-<body>
-  <!-- Loader -->
-  <div class="loader">
-    <div class="loader-spinner"></div>
-    <div class="loader-text">SER CROCHET</div>
-  </div>
+    <!-- CSS Externos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
 
-  <!-- Skip to content link -->
-  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <!-- Open Graph / Social Media -->
+    <meta
+      property="og:title"
+      content="SER CROCHET | Artesanías en Crochet Hechas a Mano"
+    />
+    <meta
+      property="og:description"
+      content="Descubre nuestra colección de productos artesanales en crochet, elaborados con técnicas tradicionales y materiales sostenibles."
+    />
+    <meta
+      property="og:image"
+      content="https://sercrochet.netlify.app/img/social-share.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Productos artesanales SER CROCHET" />
+    <meta property="og:url" content="https://sercrochet.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SER CROCHET" />
 
-  <!-- Header -->
-  <header class="main-header">
-    <div class="header-container">
-      <div class="logo">
-        <img src="img/logo_ser_crochet.webp" alt="SER CROCHET Logo" width="50" height="50">
-        <span class="logo-text">SER CROCHET</span>
-      </div>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="SER CROCHET | Artesanías en Crochet Hechas a Mano"
+    />
+    <meta
+      name="twitter:description"
+      content="Productos artesanales en crochet 100% hechos a mano con materiales ecológicos."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sercrochet.netlify.app/img/social-share.webp"
+    />
+    <meta name="twitter:site" content="@sercrochet" />
+    <meta name="twitter:creator" content="@sercrochet" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">SER CROCHET</div>
+    </div>
 
-      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#productos" class="nav-cta">Comprar Ahora</a></li>
-          <li class="cart-icon-container">
-              <a href="#carrito" class="cart-link" aria-label="Bolsa de compras">
-                  <i class="fas fa-shopping-bag"></i>
-                  <span class="cart-count">0</span>
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-container">
+        <div class="logo">
+          <img
+            src="img/logo_ser_crochet.webp"
+            alt="SER CROCHET Logo"
+            width="50"
+            height="50"
+          />
+          <span class="logo-text">SER CROCHET</span>
+        </div>
+
+        <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#productos" class="nav-cta">Comprar Ahora</a></li>
+            <li class="cart-icon-container">
+              <a
+                href="#carrito"
+                class="cart-link"
+                aria-label="Bolsa de compras"
+              >
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">0</span>
               </a>
-          </li>
-        </ul>
-      </nav>
+            </li>
+          </ul>
+        </nav>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false" aria-controls="mainNav">
-        <i class="fas fa-bars" aria-hidden="true"></i>
-      </button>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-      <div class="hero-content" data-aos="fade-up">
-        <h1>Artesanía Hecha con Amor</h1>
-        <p>Descubre nuestra colección exclusiva de productos tejidos a mano con técnicas tradicionales y materiales sostenibles.</p>
-        <div class="hero-btns">
-          <a href="#productos" class="btn btn-primary">Ver Colección</a>
-          <a href="#contacto" class="btn btn-secondary">Contactar Artesana</a>
-        </div>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Menú"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section" id="nosotros">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Sobre Nosotros</h2>
-        <p>Conoce la historia y pasión detrás de cada pieza que creamos</p>
-      </div>
-
-      <div class="about-container">
-        <div class="about-img" data-aos="fade-right">
-          <img src="img/artesana-trabajando.webp" alt="Artesana trabajando en crochet" width="600" height="600" loading="">
-        </div>
-
-        <div class="about-content" data-aos="fade-left">
-          <h3>Nuestra Historia</h3>
-          <p>SER CROCHET nació del amor por el tejido y el deseo de preservar las técnicas artesanales tradicionales. Cada pieza que creamos cuenta una historia y lleva impregnada la dedicación de nuestras manos.</p>
-          <p>Utilizamos materiales ecológicos y sostenibles, contribuyendo al cuidado del medio ambiente mientras creamos piezas únicas y duraderas.</p>
-          
-          <div class="mission-vision">
-            <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
-              <i class="fas fa-hands-helping" aria-hidden="true"></i>
-              <h4>Misión</h4>
-              <p>Crear tejidos artesanales de alta calidad que combinen tradición y diseño contemporáneo, promoviendo el comercio justo y el consumo responsable.</p>
-            </div>
-
-            <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
-              <i class="fas fa-eye" aria-hidden="true"></i>
-              <h4>Visión</h4>
-              <p>Ser reconocidos como referentes en artesanía colombiana, expandiendo nuestras técnicas tradicionales a nuevas generaciones y mercados internacionales.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="section products-section" id="productos">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Nuestros Productos</h2>
-        <p>Descubre nuestra colección de piezas únicas tejidas a mano</p>
-      </div>
-
-      <div class="products-filter" data-aos="fade-up">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="bolsos">Bolsos</button>
-        <button class="filter-btn" data-filter="accesorios">Accesorios y Prendas</button>
-        <button class="filter-btn" data-filter="decoracion">Decoración</button>
-      </div>
-
-      <div class="swiper" data-aos="fade-up">
-        <div class="swiper-wrapper">
-          
-        </div>
-
-        <!-- Swiper Controls -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next" aria-label="Siguiente producto"></div>
-        <div class="swiper-button-prev" aria-label="Producto anterior"></div>
-      </div>
-
-      <div class="text-center" data-aos="fade-up">
-        <a href="CATALOGO-SER-CROCHET-2025.pdf" class="btn btn-primary" download>Descargar Catálogo Completo</a>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section testimonials-section" id="testimonios">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Testimonios</h2>
-        <p>Lo que dicen nuestros clientes sobre nuestros productos</p>
-      </div>
-
-      <div class="testimonials-container">
-        <div class="testimonial-card" data-aos="fade-up">
-          <div class="testimonial-content">
-            "Los productos de SER CROCHET son únicos y de excelente calidad. Recibí muchos cumplidos por mi bolso y ya estoy pensando en mi próxima compra."
-          </div>
-          <div class="testimonial-author">
-            <div class="author-img">
-              <img src="img/testimonio1.webp" alt="Ana Gómez" width="50" height="50" loading="lazy">
-            </div>
-            <div class="author-info">
-              <h4>Ana Gómez</h4>
-              <p>Bogotá</p>
-              <div class="rating" aria-label="5 de 5 estrellas">★★★★★</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="testimonial-content">
-            "La atención personalizada y el cuidado en los detalles hacen la diferencia. Mi ramo de girasoles es exactamente como lo imaginé, ¡perfecto para mi sala!"
-          </div>
-          <div class="testimonial-author">
-            <div class="author-img">
-              <img src="img/testimonio2.webp" alt="Lucía Ramírez" width="50" height="50" loading="lazy">
-            </div>
-            <div class="author-info">
-              <h4>Lucía Ramírez</h4>
-              <p>Medellín</p>
-              <div class="rating" aria-label="4 de 5 estrellas">★★★★☆</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="testimonial-content">
-            "Como regalo para mi madre fue un éxito. El tulipán tejido llegó en perfecto estado y con una presentación impecable. Definitivamente volveré a comprar."
-          </div>
-          <div class="testimonial-author">
-            <div class="author-img">
-              <img src="img/testimonio3.webp" alt="Marta Torres" width="50" height="50" loading="lazy">
-            </div>
-            <div class="author-info">
-              <h4>Marta Torres</h4>
-              <p>Cali</p>
-              <div class="rating" aria-label="5 de 5 estrellas">★★★★★</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact-section" id="contacto">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Contacto</h2>
-        <p>¿Tienes preguntas o deseas un producto personalizado? Escríbenos</p>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact-info" data-aos="fade-right">
-          <div class="contact-card">
-            <div class="contact-icon">
-              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Ubicación</h3>
-              <p>Los Córdobas, Colombia</p>
-              <p>Envíos a todo el país</p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <i class="fas fa-phone-alt" aria-hidden="true"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Teléfono</h3>
-              <p><a href="tel:+573226102915">+57 322 610 2915</a></p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <i class="fas fa-envelope" aria-hidden="true"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Email</h3>
-              <p><a href="mailto:Sarayespitia4@gmail.com">Sarayespitia4@gmail.com</a></p>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-icon">
-              <i class="fas fa-clock" aria-hidden="true"></i>
-            </div>
-            <div class="contact-text">
-              <h3>Horario</h3>
-              <p>Lunes a Viernes: 9am - 6pm</p>
-              <p>Sábados: 10am - 2pm</p>
-            </div>
-          </div>
-
-          <h3 style="margin-top: 20px;">Síguenos</h3>
-          <div class="social-links">
-            <a href="https://instagram.com/ser.crochet11" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/asher.walker.20" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-            <a href="https://wa.me/573226102915" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-          </div>
-        </div>
-
-        <div class="contact-form" data-aos="fade-left">
-          <form action="https://formsubmit.co/Sarayespitia4@gmail.com" method="POST">
-            <div class="form-group">
-              <label for="name">Nombre Completo</label>
-              <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-        
-            <div class="form-group">
-              <label for="email">Correo Electrónico</label>
-              <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-        
-            <div class="form-group">
-              <label for="phone">Teléfono (Opcional)</label>
-              <input type="tel" id="phone" name="phone" class="form-control">
-            </div>
-        
-            <div class="form-group">
-              <label for="subject">Asunto</label>
-              <input type="text" id="subject" name="subject" class="form-control" required>
-            </div>
-        
-            <div class="form-group">
-              <label for="message">Mensaje</label>
-              <textarea id="message" name="message" class="form-control" required></textarea>
-            </div>
-        
-            <!-- Configuración de FormSubmit -->
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://ser-crochet.netlify.app/gracias.html">
-        
-            <button type="submit" class="submit-btn">Enviar Mensaje</button>
-          </form>
-        </div>
-        
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h3>SER CROCHET</h3>
-        <p>Artesanías tejidas a mano con amor y dedicación. Productos únicos y sostenibles para personas que valoran lo hecho a mano.</p>
-        <div class="footer-social">
-          <a href="https://instagram.com/ser.crochet11" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/asher.walker.20" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-          <a href="https://wa.me/573226102915" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h3>Menú</h3>
-        <ul class="footer-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Sobre Nosotros</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Productos</h3>
-        <ul class="footer-links">
-          <li><a href="#productos">Bolsos</a></li>
-          <li><a href="#productos">Accesorios y Prendas</a></li>
-          <li><a href="#productos">Decoración</a></li>
-          <li><a href="#productos">Personalizados</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Contacto</h3>
-        <ul class="footer-links">
-          <li><a href="tel:+573226102915">+57 322 610 2915</a></li>
-          <li><a href="mailto:Sarayespitia4@gmail.com">Sarayespitia4@gmail.com</a></li>
-          <li>Los Córdobas, Colombia</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="copyright">
-      <p>&copy; <span id="current-year">2025</span> SER CROCHET. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/573226102915" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
-    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-  </a>
-
-  <!-- Back to Top Button -->
-  <a href="#main-content" class="back-to-top" aria-label="Volver arriba">
-    <i class="fas fa-arrow-up" aria-hidden="true"></i>
-  </a>
-
-  <!-- Cookie Consent -->
-  <div class="cookie-consent" id="cookieConsent">
-    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.</p>
-    <button class="cookie-btn" id="acceptCookies">Aceptar</button>
-  </div>
-
-  <!-- Carrito Modal -->
-<aside class="cart-modal" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
-  <section class="cart-content">
-    <header class="cart-header">
-      <h3 id="cartTitle">Tu Carrito</h3>
-      <button class="close-cart" aria-label="Cerrar carrito" title="Cerrar carrito">&times;</button>
     </header>
-    <ul class="cart-items" aria-live="polite">
-      <!-- Los productos se agregarán aquí dinámicamente -->
-    </ul>
-    <footer class="cart-summary">
-      <div class="cart-total">
-        <span>Total:</span>
-        <span class="total-price" aria-live="polite">$0 COP</span>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero" id="inicio">
+        <div class="hero-content" data-aos="fade-up">
+          <h1>Artesanía Hecha con Amor</h1>
+          <p>
+            Descubre nuestra colección exclusiva de productos tejidos a mano con
+            técnicas tradicionales y materiales sostenibles.
+          </p>
+          <div class="hero-btns">
+            <a href="#productos" class="btn btn-primary">Ver Colección</a>
+            <a href="#contacto" class="btn btn-secondary">Contactar Artesana</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="nosotros">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sobre Nosotros</h2>
+          <p>Conoce la historia y pasión detrás de cada pieza que creamos</p>
+        </div>
+
+        <div class="about-container">
+          <div class="about-img" data-aos="fade-right">
+            <img
+              src="img/artesana-trabajando.webp"
+              alt="Artesana trabajando en crochet"
+              width="600"
+              height="600"
+              loading=""
+            />
+          </div>
+
+          <div class="about-content" data-aos="fade-left">
+            <h3>Nuestra Historia</h3>
+            <p>
+              SER CROCHET nació del amor por el tejido y el deseo de preservar
+              las técnicas artesanales tradicionales. Cada pieza que creamos
+              cuenta una historia y lleva impregnada la dedicación de nuestras
+              manos.
+            </p>
+            <p>
+              Utilizamos materiales ecológicos y sostenibles, contribuyendo al
+              cuidado del medio ambiente mientras creamos piezas únicas y
+              duraderas.
+            </p>
+
+            <div class="mission-vision">
+              <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                <h4>Misión</h4>
+                <p>
+                  Crear tejidos artesanales de alta calidad que combinen
+                  tradición y diseño contemporáneo, promoviendo el comercio
+                  justo y el consumo responsable.
+                </p>
+              </div>
+
+              <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-eye" aria-hidden="true"></i>
+                <h4>Visión</h4>
+                <p>
+                  Ser reconocidos como referentes en artesanía colombiana,
+                  expandiendo nuestras técnicas tradicionales a nuevas
+                  generaciones y mercados internacionales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="section products-section" id="productos">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Nuestros Productos</h2>
+          <p>Descubre nuestra colección de piezas únicas tejidas a mano</p>
+        </div>
+
+        <div class="products-filter" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="bolsos">Bolsos</button>
+          <button class="filter-btn" data-filter="accesorios">
+            Accesorios y Prendas
+          </button>
+          <button class="filter-btn" data-filter="decoracion">
+            Decoración
+          </button>
+        </div>
+
+        <div class="swiper" data-aos="fade-up">
+          <div class="swiper-wrapper"></div>
+
+          <!-- Swiper Controls -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next" aria-label="Siguiente producto"></div>
+          <div class="swiper-button-prev" aria-label="Producto anterior"></div>
+        </div>
+
+        <div class="text-center" data-aos="fade-up">
+          <a
+            href="CATALOGO-SER-CROCHET-2025.pdf"
+            class="btn btn-primary"
+            download
+            >Descargar Catálogo Completo</a
+          >
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="section testimonials-section" id="testimonios">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Testimonios</h2>
+          <p>Lo que dicen nuestros clientes sobre nuestros productos</p>
+        </div>
+
+        <div class="testimonials-container">
+          <div class="testimonial-card" data-aos="fade-up">
+            <div class="testimonial-content">
+              "Los productos de SER CROCHET son únicos y de excelente calidad.
+              Recibí muchos cumplidos por mi bolso y ya estoy pensando en mi
+              próxima compra."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img">
+                <img
+                  src="img/testimonio1.webp"
+                  alt="Ana Gómez"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+              </div>
+              <div class="author-info">
+                <h4>Ana Gómez</h4>
+                <p>Bogotá</p>
+                <div class="rating" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-content">
+              "La atención personalizada y el cuidado en los detalles hacen la
+              diferencia. Mi ramo de girasoles es exactamente como lo imaginé,
+              ¡perfecto para mi sala!"
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img">
+                <img
+                  src="img/testimonio2.webp"
+                  alt="Lucía Ramírez"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+              </div>
+              <div class="author-info">
+                <h4>Lucía Ramírez</h4>
+                <p>Medellín</p>
+                <div class="rating" aria-label="4 de 5 estrellas">★★★★☆</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-content">
+              "Como regalo para mi madre fue un éxito. El tulipán tejido llegó
+              en perfecto estado y con una presentación impecable.
+              Definitivamente volveré a comprar."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img">
+                <img
+                  src="img/testimonio3.webp"
+                  alt="Marta Torres"
+                  width="50"
+                  height="50"
+                  loading="lazy"
+                />
+              </div>
+              <div class="author-info">
+                <h4>Marta Torres</h4>
+                <p>Cali</p>
+                <div class="rating" aria-label="5 de 5 estrellas">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact-section" id="contacto">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contacto</h2>
+          <p>
+            ¿Tienes preguntas o deseas un producto personalizado? Escríbenos
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Ubicación</h3>
+                <p>Los Córdobas, Colombia</p>
+                <p>Envíos a todo el país</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+573226102915">+57 322 610 2915</a></p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:Sarayespitia4@gmail.com"
+                    >Sarayespitia4@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock" aria-hidden="true"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 9am - 6pm</p>
+                <p>Sábados: 10am - 2pm</p>
+              </div>
+            </div>
+
+            <h3 style="margin-top: 20px">Síguenos</h3>
+            <div class="social-links">
+              <a
+                href="https://instagram.com/ser.crochet11"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/asher.walker.20"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://wa.me/573226102915"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form" data-aos="fade-left">
+            <form
+              action="https://formsubmit.co/Sarayespitia4@gmail.com"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Nombre Completo</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Teléfono (Opcional)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Configuración de FormSubmit -->
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://ser-crochet.netlify.app/gracias.html"
+              />
+
+              <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>SER CROCHET</h3>
+          <p>
+            Artesanías tejidas a mano con amor y dedicación. Productos únicos y
+            sostenibles para personas que valoran lo hecho a mano.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://instagram.com/ser.crochet11"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/asher.walker.20"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://wa.me/573226102915"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Menú</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Productos</h3>
+          <ul class="footer-links">
+            <li><a href="#productos">Bolsos</a></li>
+            <li><a href="#productos">Accesorios y Prendas</a></li>
+            <li><a href="#productos">Decoración</a></li>
+            <li><a href="#productos">Personalizados</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+573226102915">+57 322 610 2915</a></li>
+            <li>
+              <a href="mailto:Sarayespitia4@gmail.com"
+                >Sarayespitia4@gmail.com</a
+              >
+            </li>
+            <li>Los Córdobas, Colombia</li>
+          </ul>
+        </div>
       </div>
-      <button class="btn btn-primary checkout-btn">Finalizar Compra</button>
+
+      <div class="copyright">
+        <p>
+          &copy; <span id="current-year">2025</span> SER CROCHET. Todos los
+          derechos reservados.
+        </p>
+      </div>
     </footer>
-  </section>
-</aside>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
-  
-<!-- Configuración de Firebase -->
-<script src="/js/firebase-config.js"></script>
+    <!-- WhatsApp Float -->
+    <a
+      href="https://wa.me/573226102915"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chatea con nosotros por WhatsApp"
+    >
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
 
-<!-- Lógica visual -->
-<script src="/js/main.js"></script>
-</body>
+    <!-- Back to Top Button -->
+    <a href="#main-content" class="back-to-top" aria-label="Volver arriba">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+      <p>
+        Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al
+        continuar navegando, aceptas nuestro uso de cookies.
+      </p>
+      <button class="cookie-btn" id="acceptCookies">Aceptar</button>
+    </div>
+
+    <!-- Carrito Modal -->
+    <aside
+      class="cart-modal"
+      id="cartModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cartTitle"
+    >
+      <section class="cart-content">
+        <header class="cart-header">
+          <h3 id="cartTitle">Tu Carrito</h3>
+          <button
+            class="close-cart"
+            aria-label="Cerrar carrito"
+            title="Cerrar carrito"
+          >
+            &times;
+          </button>
+        </header>
+        <ul class="cart-items" aria-live="polite">
+          <!-- Los productos se agregarán aquí dinámicamente -->
+        </ul>
+        <footer class="cart-summary">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span class="total-price" aria-live="polite">$0 COP</span>
+          </div>
+          <button class="btn btn-primary checkout-btn">Finalizar Compra</button>
+        </footer>
+      </section>
+    </aside>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+
+    <!-- Configuración de Firebase -->
+    <script src="/js/firebase-config.js"></script>
+
+    <!-- Lógica visual -->
+    <script src="/js/main.js"></script>
+  </body>
 </html>
